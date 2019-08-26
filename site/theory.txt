@@ -1,0 +1,58 @@
+WEBSITES FOR REFERENCES AND SOLUTIONS:-
+> stackoverflow
+> jsfiddle
+> codepen
+> css-tricks
+
+
+
+HTML - HyperText Markup Language
+	>provides structure to your webpage
+	>shows what components are in your webpage
+	
+	>HyperText because one text links to another text and so on. Sometimes the final link may again link to the first text.
+	>HyperMedia includes media. It is upgraded HyperText 
+	(all the playables i.e audio,video,etc)
+
+	>Markup Because the it provides tags which speak what the the text in your webpage is 
+	(eg <title>Something</title> will tell you that "Something" is the title of your webpage)
+
+	>Language because it is something that is understandable by a community (i.e web devs know what you are doing)
+
+
+CSS - Cascading Style Sheets
+	>Provides the style (colors,layout,font style,etc) to the components of your webpage
+
+
+Javascript - >provides functionality (behaviour) to the
+	webpage
+	>eg what happens when clicking something, what happens when pages load etc.
+
+
+HTML tags - <+element(eg p,head,body,etc)+> together form a tag
+			( <element> )
+		<p attribute name="value" or attributename = "value  "> are same as spaces don't matter
+		BUT THERE SHOULD BE NO SPACE BETWEEN '<' AND THE ELEMENT i.e. '<p' however there is no annonation to be followed for closing it (i.e <p> or <p > are the same)
+		BUT CLOSING TAGS MUST BE ONE SINGLE ELEMENT (eg </p>)
+
+		>Use "" or '' to specify attribute values.(not compulsory but good for understanding purpose)
+
+		HTML tags are case insensitive
+
+
+
+format of HTML document-(NOTE HTML ALWAYS GETS INTERPRETED FROM TOP TO BOTTOM)
+
+<!doctype html>		(Not necessary. Only used to distinguish between compliant and non compliant pages i.e. your browser will know that it is a html page, if not used then it treats as your page DOESN'T follow html standard and BROWSER WILL INTERPRET IN "QUIRKS" MODE)
+<html>
+	<head>
+		<meta charset="utf-8">		(standalone tag. Not mandatory. Used for specifying metadata)
+		Content (usually title,etc)
+		<title>		
+				(Compulsory tag)
+		</title>
+	</head>
+	<body>
+		Content (the main body)
+	</body>
+</html>

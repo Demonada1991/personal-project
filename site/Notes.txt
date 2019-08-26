@@ -1,0 +1,81 @@
+$ git clone LINK OF YOUR GIT PAGE
+#makes a copy of the git page/s on your local machine
+
+
+
+$ git checkout branchname (eg gh-pages in our case)
+# changes the branch to the specified one (i.e gh-pages)
+C:\Users\Aymen\Desktop\Git Project\personal-project\site>git status
+#This command gives the status of your git page (eg what is extra on your device vs what is on your github repository)
+
+
+On branch gh-pages
+Your branch is up to date with 'origin/gh-pages'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./ 	(uncommited parent folders (denoted by "./") will be shown in RED till you reach the last parent directory that was commited)
+
+nothing added to commit but untracked files present (use "git add" to track)
+#This message is given when your current working directory (denoted by './') is not commited or linked with your github repo
+
+
+
+
+#Whenever you create a new folder/file locally; use "C:\Users\Aymen\Desktop\Git Project\personal-project>git add ."
+# "." is used to mark everthing that is still uncommitted (in our case only "site")
+#you can also particularly mark what you wanna commit (eg git add site)
+
+
+
+C:\Users\Aymen\Desktop\Git Project\personal-project>git status
+On branch gh-pages
+Your branch is up to date with 'origin/gh-pages'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   site/index.html    (in the last commited parent directory, everything uncommitted will be shown in GREEN)
+
+	(OR	modified:	filename or foldername) 
+
+#These are the files/folders that are marked to be committed 
+#it could be a "new file" or "modified file"
+
+
+
+C:\Users\Aymen\Desktop\Git Project\personal-project>git config --global user.email "aymens1991@gmail.com"
+
+C:\Users\Aymen\Desktop\Git Project\personal-project>git config --global user.name "Aymen"
+#these are commands used to authorize your github account and Author name
+
+
+
+C:\Users\Aymen\Desktop\Git Project\personal-project>git commit -m "My First Page"
+[gh-pages b398c68] My First Page
+ 1 file changed, 9 insertions(+)
+ create mode 100644 site/index.html
+#once the files are marked and your github is linked, use this command to commit changes
+#"-m" is used to give a custom message(My First Page) when you execute the command to show yourself what is happening(not mandatory)
+
+
+
+C:\Users\Aymen\Desktop\Git Project\personal-project>git push
+#once you have commited changes locally, this command is used to commit changes remotely(i.e on your Github repo)
+
+
+
+#Browser-sync is used to live sync your files. (i.e. once you save on your pc, your website gets updated without needing to be refreshed)
+
+
+
+#C:\Users\Aymen\Desktop\Git Project\personal-project\site>browser-sync start --server --directory --files "*"
+#This command starts browser-sync in server mode (i.e. your pc is the server) from the current directory (i.e. "site") select files with "name" (we used name as "*" which means all files in current directory)
+
+
+
+"git add,commit and push" MUST BE DONE AFTER EVERY CHANGE IF YOU WANT TO SEE THEM IN YOUR REPO(You can also commit multiple changes at once)
+(NOT NEEDED if using browser-sync)
+
+
+
+
